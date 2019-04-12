@@ -1,13 +1,23 @@
 1) Injection (trevor) [COMPLETE]
   o Place code in search/add functions to prevent injection. 
 2) Broken Authentication
+  o Set "secure" and "HttpOnly" flags for session cookies.
+  o send CSRF(Cross-Site Requset Forgery) token with forms.
 3) Sensitive data exposure
+  o use strong ciphers and hashes
+  o maintain strong encrypted communications between web and database servers
 4) XML External Entities (XXE)
 5) Broken Access control
 6) Security misconfigurations
+  o disable allow_url_fopen and allow_url_include in php.ini.
 7) Cross-Site Scripting (XSS)
 8) Insecure Deserialization
 9) Using Components with known vulnerabilities
 10) Insufficient logging and monitoring (trevor)[COMPLETE]
   o logged all errors to php.ini file. 
   o All php/db errors produce just a generic error message to the user. 
+
+
+
+2018 owasp top 10 cheat sheet
+https://www.owasp.org/index.php/OWASP_Top_Ten_Cheat_Sheet
